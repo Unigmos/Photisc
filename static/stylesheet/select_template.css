@@ -1,0 +1,26 @@
+.template-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.template-box {
+  border: 1px solid #333;
+  border-radius: 5px;
+  max-width: 30%;
+  margin: 2%;
+}
+
+.template-box a {
+  text-decoration: none;
+}
+
+.template-img {
+  margin: 10px;
+}
+
+.template-information p {
+  color: #333;
+  margin-left: 3%;
+}
+/*# sourceMappingURL=select_template.css.map */
