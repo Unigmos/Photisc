@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Photisc-TOP</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet/main_style.css') }}">
+    </head>
+    <body>
+        <h1>Photiscへようこそ！</h1>
+        <p>Photiscは登録不要なロゴやヘッダー画像の作成サイトです！！</p>
+        <p>タイトル情報:{{ data.title }}</p>
+        <p>単価:{{ data.price }}</p>
+        <p>その他情報:{{ data.other }}</p>
+        <div class="to-template-button">
+            <a href="{{ url_for('select_template') }}">テンプレートから作成する</a>
+        </div>
+
+    </body>
+</html>
