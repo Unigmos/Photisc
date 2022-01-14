@@ -1,6 +1,5 @@
 from Photisc import app
 from flask import render_template
-import make_content
 
 @app.route('/')
 def index():
