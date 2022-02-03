@@ -66,57 +66,60 @@ p{color:blue;}
     -o-transition: all 0.3s ease;
     transition: all  0.3s ease;
 }
+.zero-index{
+    z-index:0;
+}
 a{
     text-decoration: none;
     color: #000;
 }
   
 ul{
-list-style: none;
+    list-style: none;
 }
 
 .menu{
--webkit-transform: translateX(100%);
-transform: translateX(100%);
--webkit-transition: ease .5s;
-transition: ease .5s;
-z-index: 100;
-}
-
-.menu ul li{
-padding-top: 2em;
-padding-bottom: 2em;
-padding-right: 27em;
-padding-left: 27em;
-border-bottom: 1px solid #8B8B8B;
-}
-
-.menu.open{
-display: block;
--webkit-transform: translateX(0);
-transform: translateX(0);
-overflow-y: auto;
--webkit-overflow-scrolling: touch;
-background-color: #fff;
-padding-bottom:1000%;
-z-index: 50;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+    z-index: 100;
+    ul{
+        li{
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-right: 27em;
+            padding-left: 27em;
+            border-bottom: 1px solid #8B8B8B;
+        }
+    }
+    &.open{
+        display: block;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        background-color: #fff;
+        padding-bottom:1000%;
+        z-index: 50;
+    }
 }
 
 .drawers{
-position:absolute;
-right: 0;
-z-index:10;
-//background-color: #fff;
+    position:absolute;
+    right: 0;
+    z-index:10;
+    //background-color: #fff;
 }
 
 .drawer{
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-direction: row;
-position: relative;
-height: 30px;
-padding: 1em 2em 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    height: 30px;
+    padding: 1em 2em 0 2em;
 }
   
 /* タブレット以下のサイズで表示 */
@@ -132,51 +135,49 @@ padding: 1em 2em 0 2em;
 }
 
 .navbar_toggle {
-z-index: 20;
+    z-index: 20;
 }
 
 .navbar_toggle_icon {
-position: relative;
-display: block;
-height: 2px;
-width: 30px;
-background: #C88D95;
--webkit-transition: ease .5s;
-transition: ease .5s;
-}
-
-.navbar_toggle_icon:nth-child(1) {
-top: 0;
-}
-
-.navbar_toggle_icon:nth-child(2) {
-margin: 8px 0;
-}
-
-.navbar_toggle_icon:nth-child(3) {
-top: 0;
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #C88D95;
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+    &:nth-child(1){
+        top: 0;
+    }
+    &:nth-child(2){
+        margin: 8px 0;
+    }
+    &:nth-child(3){
+        top: 0;
+    }
 }
 
 /*ハンバーガーメニューの開閉*/
-.navbar_toggle.open .navbar_toggle_icon:nth-child(1) {
-top: 10px;
--webkit-transform: rotate(45deg);
-transform: rotate(45deg);
-}
-
-.navbar_toggle.open .navbar_toggle_icon:nth-child(2) {
--webkit-transform: translateY(-50%);
-transform: translateY(-50%);
-transform:scale(0, 1);
-opacity: 0;
-}
-
-.navbar_toggle.open .navbar_toggle_icon:nth-child(3) {
-top: -10px;
--webkit-transform: rotate(-45deg);
-transform: rotate(-45deg);
-}
-
-.navbar_toggle {
-margin: 0 0 0 auto;
+.navbar_toggle{
+    &.open{
+        .navbar_toggle_icon{
+            &:nth-child(1){
+                top: 10px;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                transform:scale(0, 1);
+                opacity: 0;
+            }
+            &:nth-child(3){
+                top: -10px;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    margin: 0 0 0 auto;
 }

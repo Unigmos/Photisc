@@ -81,6 +81,10 @@ p {
   transition: all  0.3s ease;
 }
 
+.zero-index {
+  z-index: 0;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -180,6 +184,10 @@ ul {
 }
 
 /*ハンバーガーメニューの開閉*/
+.navbar_toggle {
+  margin: 0 0 0 auto;
+}
+
 .navbar_toggle.open .navbar_toggle_icon:nth-child(1) {
   top: 10px;
   -webkit-transform: rotate(45deg);
@@ -198,9 +206,5 @@ ul {
   top: -10px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
-
-.navbar_toggle {
-  margin: 0 0 0 auto;
 }
 /*# sourceMappingURL=main_style.css.map */
