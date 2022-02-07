@@ -4,9 +4,6 @@ body {
 }
 
 .site-header {
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  background: #303030;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,5 +203,9 @@ ul {
   top: -10px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.navi_menu ul li {
+  display: inline;
 }
 /*# sourceMappingURL=main_style.css.map */

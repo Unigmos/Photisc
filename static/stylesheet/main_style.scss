@@ -5,8 +5,8 @@ body{
 }
 
 .site-header{
-    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.20);
-    background:#303030;
+    //box-shadow:0px 0px 20px rgba(0, 0, 0, 0.20);
+    //background:#303030;
     display:flex;
     padding:0;
     position:fixed;
@@ -180,4 +180,10 @@ ul{
         }
     }
     margin: 0 0 0 auto;
+}
+
+.navi_menu{
+    ul li{
+        display: inline;
+    }
 }
